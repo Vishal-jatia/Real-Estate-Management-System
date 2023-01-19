@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="left-nav">
+            <h2>New Customer</h2>
+            <h2 class="property"><a  href="http://localhost/dbms/property.php"> Properties</a></h2>
+        </div>
+
+        <img class="logo-img" src="images/logo images.png" alt="logo">
+        <div class="right-nav">
+            <h2><a  href="http://localhost/dbms/forsale.html">For Sale</a></h2>
+            <h2><a  href="http://localhost/dbms/forrent.html">For Rent</a></h2>
+            <h2><a  href="http://localhost/dbms/findproperty.html">Find Properties</a></h2>
+        </div>
+    </nav>
+    <br>
+    <div class="slogan">
+        <h1 class="slogan-text">FIND YOUR <span>DREAM</span> PLACE HERE</h1>
+    </div>
+
+    <div class="selection-bar">
+        <form class="customer-details" action="index.php" method="post">
+            <div>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname">
+            </div>
+            <div>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname">
+            </div>
+            <div>
+                <label for="id">Id</label>
+                <input type="text" id="id" name="id">
+            </div>
+            <div>
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address">
+            </div>
+            <div>
+                <label for="pnum">Phone Number</label>
+                <input type="text" id="pnum" name="phoneNumber">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <input class="submit-btn" type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+</body>
+
+</html>

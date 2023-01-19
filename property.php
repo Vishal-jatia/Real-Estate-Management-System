@@ -1,0 +1,46 @@
+<html>
+    <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>Property List</h1>
+        <br>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>PropertyID</th>
+                <th>Address</th>
+                <th>Area</th>
+                <th>Owner</th>
+                <th>Price</th>
+                <th>Type</th>
+                <th>Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php
+    $server = "localhost";
+    $username = "root";
+    $password = "";
+    $database="propertymanagement";
+    $con = mysqli_connect($server, $username, $password,$database);
+    if(!$con){
+        die("connection to this database failed due to" . mysqli_connect_error());
+    }
+    $table="select * from `property`";
+    $result2=mysqli_query($con,$table);
+    while($row= mysqli_fetch_assoc($result2)){
+        echo"<tr>
+        <td>".$row['pid']."</td>
+        <td>".$row['paddress']."</td>
+        <td>".$row['Area']."</td>
+        <td>".$row['owner']."</td>
+        <td>".$row['propprice']."</td>
+        <td>".$row['ptype']."</td>
+        <td>".$row['pstatus']."</td>
+        </tr>";
+    }?>
+            </tbody>
+        </table>
+    </body>
+</html>

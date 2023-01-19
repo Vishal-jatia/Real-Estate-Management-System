@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    background: url("images/landing\ page\ background\ image.png");
+    background-size: 80vw 110vh;
+    background-position-x: center;
+    background-position-y: 0;
+    background-repeat: no-repeat;
+    font-family: 'MerchantLight';
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 200;
+
+}
+
+.right-nav{
+    display: flex;
+    gap:50px;
+}
+.left-nav {
+    display: flex;
+    gap: 140px;
+}
+
+.logo-img {
+    border-radius: 50%;
+    width: 100px;
+    position: absolute;
+    margin: 0px auto;
+}
+
+.slogan {
+    background: rgba(180, 180, 180, 0.153);
+    box-shadow: 0 4px 42px -10px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: fit-content;
+    padding: 3px 100px;
+    margin: 40px auto;
+    border-radius: 10px;
+}
+
+.slogan-text {
+    letter-spacing: 10px;
+    font-weight: 100;
+}
+
+.slogan-text>span {
+    color: #FFA800;
+}
+
+.selection-bar {
+    background: rgba(180, 180, 180, 0.153);
+    box-shadow: 0 4px 42px -10px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: fit-content;
+    padding: 20px 100px;
+    margin: 40px auto;
+    border-radius: 10px;
+}
+
+.customer-details,.find{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 20px;
+}
+.find{
+    padding:10px;
+    padding-bottom: 0px;
+}
+.findprop{
+    padding: 10px;
+}
+.customer-details input{
+    border-radius: 5px;
+    border: none;
+    height: 1.4rem;
+    transition: 100ms;
+}
+.find input{
+    border-radius: 5px;
+    height: 1.4rem;
+    transition: 100ms;
+}
+
+.customer-details input:hover{
+    scale: 1.02;
+}
+
+.customer-details,.find label{
+    font-size: 1.4rem;
+}
+
+.customer-details>div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.find>div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.submit-btn{
+    border-radius: 5px;
+    background-color: white;
+    
+}
+
+/* Webfont: Merchant-Light */
+@font-face {
+    font-family: 'MerchantLight';
+    src: url('fonts/Merchant-Light\ \(2\).woff');
+    text-rendering: optimizeLegibility;
+}
